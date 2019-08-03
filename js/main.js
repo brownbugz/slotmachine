@@ -15,6 +15,7 @@
 // bar image wins $25
 // jackpot image wins $10
 
+
 /* 
 
 const winCombos = {

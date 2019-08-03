@@ -1,4 +1,74 @@
-body {
-
+html, * {
+    font-family: helvetica;
+    box-sizing: border-box;
 }
 
+h1 {
+    color: white;
+    text-align: center;
+}
+
+#flashing {
+    color: red;
+}
+
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: columm;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 30vmin 30vmin 30vmin;
+    grid-template-rows: 30vmin 30vmin 20vmin 15vmin;
+}
+
+main * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box1, #box2, #box3 {
+    border: 2vmin solid lime;
+    border-radius: 2vmin;
+}
+
+#box1, #box2, #box3 img {
+    width: 100%;
+}
+
+#winnings {
+    border: 1vmin solid lime;
+    border-radius: 10%;
+}
+
+#bank {
+    border: 1vmin solid lime;
+    border-radius: 10%;
+}
+
+@keyframes blink {
+    0% {background-color:blue;}
+    25% {background-color: lime;}
+    50% {background-color: yellow;}
+    75% {background-color: green;}
+    100% {background-color: orange;}
+}
+#spinner {
+    border: 2vmin solid lime;
+    border-radius: 48%;
+    background-color: red;
+    color: white;
+    font-size: 8vmin;
+    font-weight: 600;
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: 100;
+    animation-play-state: running;
+}

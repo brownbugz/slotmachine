@@ -1,4 +1,8 @@
+// const variables
+const 
+
 // initialize the game
+
 // pushing button to spin starts the game / animates the reel
 
 // there should be three columns for reels

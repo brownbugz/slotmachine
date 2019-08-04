@@ -1,5 +1,7 @@
 // const variables
-const 
+const IMAGES = [
+
+]
 
 // initialize the game
 

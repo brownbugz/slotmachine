@@ -1,25 +1,28 @@
 // author @brownbugz - Sonnia Kemmer
 
-// const variables
-const  = {
-    'seven':
-    'cherry':
-    'bell':
-    'orange':
-    'watermelon':
-    'grapes':
-    'apple':
+// variables
+var SLOTS = {
+    'null': 'slots-images/bigwin.jpg',
+    '0': 'slots-images/seven.png',
+    '1': 'slots-images/cherry.png',
+    '2': 'slots-images/bell.png',
+    '3': 'slots-images/orange.png',
+    '4': 'slots-images/watermelon.png',
+    '5': 'slots-images/grapes.png',
+    '6': 'slots-images/apple.png'
 }
 
-const SLOTS = {
-    'seven': 'slots-images/seven.png',
-    'cherry': 'slots-images/cherry.png',
-    'bell': 'slots-inages/bell.png',
-    'orange': 'slots-images/orange.png',
-    'watermelon': 'slots-images/watermelon.png',
-    'grapes': 'slots-images/grapes.png',
-    'apple': 'slots-images/apple.png'
+var IMAGES = {
+    'null': 'bigwin',
+    '0': 'seven',
+    '1': 'cherry',
+    '2': 'bell',
+    '3': 'orange',
+    '4': 'watermelon',
+    '5': 'grapes',
+    '6': 'apple'
 }
+
 
 const winCombos = [
     ['seven', 'seven', 'seven'],
@@ -31,15 +34,13 @@ const winCombos = [
     ['apple', 'apple', 'apple']
 ]
 
-
-/*----- app's state (variables) -----*/ 
-let board, player, wins, losses;
+let board, reels, player, wins, losses;
 
 /*----- cached element references -----*/ 
-
+let squares = document.querySelector('#box', idx);
 
 /*----- event listeners -----*/ 
-document.querySelector().addEventListener('click', handleClick);
+document.querySelector('#spinner').addEventListener('click', spnBtn);
 
 /*----- functions -----*/
 
@@ -53,14 +54,24 @@ init();
 function init() {
     board = [null, null, null];
     player = null;
+    console.log("start");
     render();
 }
 
-// pushing button to spin starts the game / animates the reel
 function render() {
+    console.log("do you render?");
 
+    board.forEach(function(reel, idx) {
+        document.getElementById("photo"+idx).src = SLOTS[reel];
+    });
+
+    if (winCombos === )
 }
 
+// pushing button to spin starts the game / animates the reel
+function spinBtn(evt) {
+
+}
 
 // there should be a starting $50 amount for the player to use
 // dollar amount will decrease upon spin

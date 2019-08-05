@@ -39,7 +39,7 @@ main * {
     border-radius: 2vmin;
 }
 
-#box1, #box2, #box3 img {
+#box0 img, #box1 img, #box2 img {
     width: 100%;
 }
 

@@ -2,14 +2,14 @@
 
 // variables
 var SLOTS = {
-    'null': 'slots-images/bigwin.jpg',
-    '0': 'slots-images/seven.png',
-    '1': 'slots-images/cherry.png',
-    '2': 'slots-images/bell.png',
-    '3': 'slots-images/orange.png',
-    '4': 'slots-images/watermelon.png',
-    '5': 'slots-images/grapes.png',
-    '6': 'slots-images/apple.png'
+    'null': 'slotmachine/slots-images/bigwin.jpg',
+    '0': 'slotmachine/slots-images/seven.png',
+    '1': 'slotmachine/slots-images/cherry.png',
+    '2': 'slotmachine/slots-images/bell.png',
+    '3': 'slotmachine/slots-images/orange.png',
+    '4': 'slotmachine/slots-images/watermelon.png',
+    '5': 'slotmachine/slots-images/grapes.png',
+    '6': 'slotmachine/slots-images/apple.png'
 }
 
 var IMAGES = {
@@ -25,29 +25,29 @@ var IMAGES = {
 
 
 const winCombos = [
-    ['seven', 'seven', 'seven'],
-    ['cherry', 'cherry', 'cherry'],
-    ['bell', 'bell', 'bell'],
-    ['orange', 'orange', 'orange'],
-    ['watermelon', 'watermelon', 'watermelon'],
-    ['grapes', 'grapes', 'grapes'],
-    ['apple', 'apple', 'apple']
+    ['0', '0', '0'],
+    ['1', '1', '1'],
+    ['2', '2', '2'],
+    ['3', '3', '3'],
+    ['4', '4', '4'],
+    ['5', '5', '5'],
+    ['6', '6', '6']
 ]
 
 let board, reels, player, wins, losses;
 
 /*----- cached element references -----*/ 
-let squares = document.querySelector('#box', idx);
+// let squares = document.querySelector('#box', idx);
 
 /*----- event listeners -----*/ 
-document.querySelector('#spinner').addEventListener('click', spnBtn);
+// document.querySelector('#spinner').addEventListener('click', spnBtn);
 
 /*----- functions -----*/
 
 // initialize the game
 init();
 
-// there should be three columns for reels
+// there should be three columns and one row for reels
 // inside the reels are different photos/squares
 // photos need to match in three
 
@@ -58,20 +58,20 @@ function init() {
     render();
 }
 
-function render() {
-    console.log("do you render?");
+// function render() {
+//     console.log("do you render?");
 
-    board.forEach(function(reel, idx) {
-        document.getElementById("photo"+idx).src = SLOTS[reel];
-    });
+//     board.forEach(function(reel, idx) {
+//         document.getElementById("photo"+idx).src = SLOTS[reel];
+//     });
 
-    if (winCombos === )
-}
+//     if (winCombos === )
+// }
 
-// pushing button to spin starts the game / animates the reel
-function spinBtn(evt) {
+// // pushing button to spin starts the game / animates the reel
+// function spinBtn(evt) {
 
-}
+// }
 
 // there should be a starting $50 amount for the player to use
 // dollar amount will decrease upon spin

@@ -3,24 +3,24 @@
 // variables
 var SLOTS = {
     'null': 'slotmachine/slots-images/bigwin.jpg',
-    '0': 'slotmachine/slots-images/seven.png',
-    '1': 'slotmachine/slots-images/cherry.png',
-    '2': 'slotmachine/slots-images/bell.png',
-    '3': 'slotmachine/slots-images/orange.png',
-    '4': 'slotmachine/slots-images/watermelon.png',
-    '5': 'slotmachine/slots-images/grapes.png',
-    '6': 'slotmachine/slots-images/apple.png'
+    // '0': 'slotmachine/slots-images/seven.png',
+    // '1': 'slotmachine/slots-images/cherry.png',
+    // '2': 'slotmachine/slots-images/bell.png',
+    // '3': 'slotmachine/slots-images/orange.png',
+    // '4': 'slotmachine/slots-images/watermelon.png',
+    // '5': 'slotmachine/slots-images/grapes.png',
+    // '6': 'slotmachine/slots-images/apple.png'
 }
 
 var IMAGES = {
     'null': 'bigwin',
-    '0': 'seven',
-    '1': 'cherry',
-    '2': 'bell',
-    '3': 'orange',
-    '4': 'watermelon',
-    '5': 'grapes',
-    '6': 'apple'
+    // '0': 'seven',
+    // '1': 'cherry',
+    // '2': 'bell',
+    // '3': 'orange',
+    // '4': 'watermelon',
+    // '5': 'grapes',
+    // '6': 'apple'
 }
 
 
@@ -34,7 +34,7 @@ const winCombos = [
     ['6', '6', '6']
 ]
 
-let board, reels, player, wins, losses;
+let board, reels, wins, losses;
 
 /*----- cached element references -----*/ 
 // let squares = document.querySelector('#box', idx);
@@ -53,13 +53,13 @@ init();
 
 function init() {
     board = [null, null, null];
-    player = null;
+
     console.log("start");
     render();
 }
 
-// function render() {
-//     console.log("do you render?");
+function render() {
+    console.log("do you render?");
 
 //     board.forEach(function(reel, idx) {
 //         document.getElementById("photo"+idx).src = SLOTS[reel];

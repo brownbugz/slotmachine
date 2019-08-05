@@ -34,7 +34,7 @@ main * {
     align-items: center;
 }
 
-#box1, #box2, #box3 {
+#box0, #box1, #box2 {
     border: 2vmin solid lime;
     border-radius: 2vmin;
 }
@@ -46,18 +46,21 @@ main * {
 #winnings {
     border: 1vmin solid lime;
     border-radius: 10%;
+    color: white;
 }
 
 #bank {
     border: 1vmin solid lime;
     border-radius: 10%;
+    color: white;
+    text-align: left;
 }
 
 @keyframes blink {
-    0% {background-color:blue;}
-    25% {background-color: lime;}
-    50% {background-color: yellow;}
-    75% {background-color: green;}
+    20% {background-color:blue;}
+    40% {background-color: lime;}
+    60% {background-color: red;}
+    80% {background-color: green;}
     100% {background-color: orange;}
 }
 #spinner {
@@ -72,3 +75,5 @@ main * {
     animation-iteration-count: 9999;
     animation-play-state: running;
 }
+
+

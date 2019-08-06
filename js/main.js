@@ -1,13 +1,20 @@
-// author @brownbugz - Sonnia Kemmer
+// author @brownbugz - Sonnia Kemmer 2019 (C)
 //console.log('in javascript');
 
-var startCredits = 50;
-
+// const variables
 const spinCost = 5;
 
 const startImage = "images/bigwin.jpg";
 
+const reels = [0, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 2, 3, 4, 5, 6, 3, 4, 5, 6, 4, 5, 6, 5, 6, 6];
+
+const payouts = [150, 120, 90, 60, 30, 15, 5];
+
+const grapes = 6;
+
 // variables
+var startCredits = 50;
+
 var PHOTOS = [
     "images/seven.png",         //0
     "images/apple.png",         //1
@@ -18,15 +25,13 @@ var PHOTOS = [
     "images/grapes.png"         //6
 ];
 
-var wins = 0;
 
-const reels = [0, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 2, 3, 4, 5, 6, 3, 4, 5, 6, 4, 5, 6, 5, 6, 6];
+var wins = 0;
 
 var reel0, reel1, reel2;
 
 var maxValue = reels.length;
 
-// /*----- cached element references -----*/ 
 
 /*----- functions -----*/
 
@@ -37,9 +42,9 @@ function reset() {
     wins = 0;
     startCredits = 50;
     resetReels();
-    //change the reel images to bigwin
 }
 
+    //change the reel images to startImage
 function resetReels() {
     console.log('resetReels'); 
     // to-do: make it to a for loop
@@ -55,6 +60,7 @@ function randomNum() {
     return reelValue;
 }
 
+// // pushing button to spin starts the game / animates the reel
 function spinBtn() {
     console.log('this spins the reels');
     //to-do: write a for loop
@@ -65,23 +71,24 @@ function spinBtn() {
 
 function changePhotos() {
 
+    function changePic() {
+        if (reelValue === PHOTOS.length) {
+        reel0.style.backgroundImage = PHOTOS[reelValue];
+        reel1.style.backgroundImage = PHOTOS[reelValue];
+        reel2.style.backgroundImage = PHOTOS[reelValue];
+        }
+    photos.addEventListener('click', changePic);
+    changePic();
+    
+    }   
+    changePhotos('photo0');
+    changePhotos('photo1');
+    changePhotos('photo2');
+    
+    console.log('this changes photo');
 
 }
 
-
-// }
-    // if (sqrLeft === null && sqrMiddle === null && sqrRight === null) {
-    //     document.getElementById("photo"+idx).src = SLOTS[reel];
-    //     console.log('start');
-
-
-//     if (winCombos === )
-// }
-
-// // pushing button to spin starts the game / animates the reel
-
-
-// }
 
 // there should be a starting $50 amount for the player to use
 // dollar amount will decrease upon spin

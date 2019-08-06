@@ -8,21 +8,21 @@
     <link rel="stylesheet" href="css/main.css">
     <script defer src="js/main.js"></script>
 </head>
-<body>
+<body onload="reset()">
     <main>
         <h1 id="game">SLOT MACHINE!</h1>
         <h1 id="header">Play Now!</h1>
         <marquee width="300" scrollamount="300" scrolldelay="800"><h1 id="flashing">BIG JACKPOT!</h1></marquee>
 
-        <div id="box0"><img id="photo0" src="slots-images/"></div>
-        <div id="box1"><img id="photo1" src="slots-images/"></div>
-        <div id="box2"><img id="photo2" src="slots-images/"></div>
+        <div id="box0"><img src="images/bigwin.jpg" id="photo0"></div>
+        <div id="box1"><img src="images/bigwin.jpg" id="photo1"></div>
+        <div id="box2"><img src="images/bigwin.jpg" id="photo2"></div>
 
-        <div id="winnings"><h2>Won: </h2></div>
+        <div id="winnings"><h3>Won: </h3></div>
 
-        <button id="spinner">SPIN</button>
+        <button id="spinner" onclick="spinBtn()">SPIN</button>
 
-        <div id="bank"><h2>Credits: </h2></div>
+        <div id="bank"><h3>Credits: </h3></div>
     </main>
 </body>
 

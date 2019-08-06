@@ -8,6 +8,11 @@ h1 {
     text-align: center;
 }
 
+#winnings, #bank {
+    color: white;
+    text-align: center;
+}
+
 #flashing {
     color: red;
 }
@@ -77,8 +82,5 @@ main * {
     outline: none;
 }
 
-img {
-
-}
 
 

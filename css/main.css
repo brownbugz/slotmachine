@@ -74,6 +74,11 @@ main * {
     animation-duration: 2s;
     animation-iteration-count: 9999;
     animation-play-state: running;
+    outline: none;
+}
+
+img {
+
 }
 
 

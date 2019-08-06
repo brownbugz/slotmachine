@@ -70,23 +70,13 @@ function spinBtn() {
 }
 
 function changePhotos() {
+    document.getElementById('photo0').src = PHOTOS[randomNum()];
+    document.getElementById('photo1').src = PHOTOS[randomNum()];
+    document.getElementById('photo2').src = PHOTOS[randomNum()];
+}
 
-    function changePic() {
-        if (reelValue === PHOTOS.length) {
-        reel0.style.backgroundImage = PHOTOS[reelValue];
-        reel1.style.backgroundImage = PHOTOS[reelValue];
-        reel2.style.backgroundImage = PHOTOS[reelValue];
-        }
-    photos.addEventListener('click', changePic);
-    changePic();
+function spinEffect() {
     
-    }   
-    changePhotos('photo0');
-    changePhotos('photo1');
-    changePhotos('photo2');
-    
-    console.log('this changes photo');
-
 }
 
 

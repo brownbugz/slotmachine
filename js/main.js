@@ -70,13 +70,13 @@ function spinBtn() {
 }
 
 function changePhotos() {
-    document.getElementById('photo0').src = PHOTOS[randomNum()];
-    document.getElementById('photo1').src = PHOTOS[randomNum()];
-    document.getElementById('photo2').src = PHOTOS[randomNum()];
+    document.getElementById('photo0').src = PHOTOS[reel0];
+    document.getElementById('photo1').src = PHOTOS[reel1];
+    document.getElementById('photo2').src = PHOTOS[reel2];
 }
 
 function spinEffect() {
-    
+
 }
 
 

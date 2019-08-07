@@ -46,6 +46,7 @@ var PHOTOS = [
     "images/grapes.png"         //6
 ];
 
+var pays = 0;
 
 var wins = 0;
 
@@ -84,6 +85,7 @@ function randomNum() {
 // // pushing button to spin starts the game / animates the reel
 function spinBtn() {
     // console.log('this spins the reels');
+    if (bankTotal > 0) {
    reel0 = randomNum();
    reel1 = randomNum();
    reel2 = randomNum();
@@ -91,7 +93,11 @@ function spinBtn() {
 //    spinEffect();
    earnings(reel0, reel1, reel2);
    showBankTotal();
-   spinDebits();
+   showMeMyWins();
+   spinDeducts();
+    } else {
+        reset();
+    }
 }
 
 function changePhotos() {
@@ -118,7 +124,6 @@ function earnings(value1, value2, value3) {
     console.log(value2);
     console.log(value3);
 
-    var pays;
     if (value1 == value2 && value2 == value3) {
         pays = payouts[value1];
         bankTotal = bankTotal + pays;
@@ -144,11 +149,18 @@ function showBankTotal() {
 
 function spinDeducts() {
     console.log('give me your money');
+    bankTotal = bankTotal - spinCost;
+    console.log(bankTotal);
+    document.getElementById('bank').innerHTML = ("Credits: " + bankTotal);
+}
 
+function showMeMyWins(){
+    console.log('i won something');
+
+    document.getElementById('winnings').innerHTML = ("Won: " + pays);
 
 }
 
-    // document.getElementById('#bank').innerHTML(`Credits: + ${spinDebits}`);
 
 
 // there should be a starting $50 amount for the player to use

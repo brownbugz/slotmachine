@@ -48,13 +48,13 @@ main * {
     width: 100%;
 }
 
-#winnings {
+#pays {
     border: 1vmin solid lime;
     border-radius: 10%;
     color: white;
 }
 
-#bank {
+#savings {
     border: 1vmin solid lime;
     border-radius: 10%;
     color: white;

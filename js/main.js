@@ -24,27 +24,17 @@ const reels = [
 ];
 
 const payouts = [
-    150, //0
-    120, //1
-    90,  //2
-    60,  //3
-    30,  //4
-    15,  //5
-    5    //6
-];
-
-const winCombos = [
-    [0],
-    [1],
-    [2],
-    [3],
-    [4],
-    [5],
-    [6]
+    1000, //0
+    500,  //1
+    250,  //2
+    150,  //3
+    100,  //4
+    50,   //5
+    5     //6
 ];
 
 // variables
-var startCredits = 50;
+var bankTotal = 50;
 
 var PHOTOS = [
     "images/seven.png",         //0
@@ -70,8 +60,9 @@ var maxValue = reels.length;
 function reset() {
     // console.log("reset begins");
     wins = 0;
-    startCredits = 50;
+    bankTotal = 50;
     resetReels();
+    showBankTotal();
 }
 
     //change the reel images to startImage
@@ -80,6 +71,7 @@ function resetReels() {
     document.getElementById('photo0').src = startImage;
     document.getElementById('photo1').src = startImage;
     document.getElementById('photo2').src = startImage;
+
 }
 
 function randomNum() {
@@ -95,6 +87,11 @@ function spinBtn() {
    reel0 = randomNum();
    reel1 = randomNum();
    reel2 = randomNum();
+   changePhotos();
+//    spinEffect();
+   earnings(reel0, reel1, reel2);
+   showBankTotal();
+   spinDebits();
 }
 
 function changePhotos() {
@@ -104,36 +101,53 @@ function changePhotos() {
     document.getElementById('photo2').src = PHOTOS[reel2];
 }
 
-function spinEffect() {
-    let x = setInterval(function() {
-        spinBtn();
-        changePhotos();
-        // console.log('Hello!');
-    }, 30);
+// function spinEffect() {
+//     let x = setInterval(function() {
+
+//         // console.log('Hello!');
+//     }, 30);
     
-    setTimeout(function() {
-        clearInterval(x);
-    }, 200);
+//     setTimeout(function() {
+//         clearInterval(x);
+//     }, 200);
+// }
+
+function earnings(value1, value2, value3) {
+    console.log('earnings() begins');
+    console.log(value1);
+    console.log(value2);
+    console.log(value3);
+
+    var pays;
+    if (value1 == value2 && value2 == value3) {
+        pays = payouts[value1];
+        bankTotal = bankTotal + pays;
+        console.log('this is pays');
+        console.log(pays);
+    }
+    showBankTotal();
+}
+    
+function showBankTotal() {
+    console.log('deposits begins');
+    console.log(bankTotal);
+    document.getElementById('bank').innerHTML = ("Credits: " + bankTotal);
 }
 
-function earnings() {
-    console.log('this works')
+
 
     // if all reels are the same, i want to associate the reels number to payouts index value
     // i want the reels number associated to the photo value also
     // then i can get the number to add to whatever is the amount of credits
-}
+
     
 
-// function spinDebits() {
-//     var y = document.getElementById('#spinner');
-//     if (spinner.clicked == true) {
-//         wins = startCredits - spinCost;
-//     } else {
-//         wins = 0;
-//     };
-// }
-// console.log(spinDebits);
+function spinDeducts() {
+    console.log('give me your money');
+
+
+}
+
     // document.getElementById('#bank').innerHTML(`Credits: + ${spinDebits}`);
 
 

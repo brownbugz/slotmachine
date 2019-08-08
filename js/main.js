@@ -108,7 +108,6 @@ function earnings(value1, value2, value3) {
         bankTotal = bankTotal + pays;
     }
     showBankTotal();
-    playWinAudio();
 }
     
 function showBankTotal() {
@@ -122,6 +121,7 @@ function spinDeducts() {
 
 function showMeMyWins(){
     document.getElementById('winnings').innerHTML = ("Won: " + pays);
+    playWinAudio();
 }
 
 function playSpinAudio() {
@@ -130,8 +130,6 @@ function playSpinAudio() {
 
 function playWinAudio() {
     console.log('this play when i win something');
-    if (wins > 0) {
-        return winAudio.play();
-    }
+    if (wins > 0) return winAudio.play();
 }
 

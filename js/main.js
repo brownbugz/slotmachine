@@ -1,5 +1,6 @@
 // author @brownbugz - Sonnia Kemmer 2019 (C)
 
+// const variables
 const spinCost = 5;
 
 const startImage = "images/bigwin.jpg";
@@ -31,10 +32,10 @@ const payouts = [
     5     //6
 ];
 
-const spinAudio = "audio/spin.mp3";
+// variables
+var spinAudio = new Audio("audio/spin.mp3");
 
-const winAudio = "audio/loudwin.mp3";
-
+var winAudio = new Audio("audio/loudwin.mp3");
 
 var bankTotal = 50;
 
@@ -56,6 +57,10 @@ var reel0, reel1, reel2;
 
 var maxValue = reels.length;
 
+// event listeners
+document.getElementById('spinner').addEventListener('click', spinBtn);
+
+// functions
 function reset() {
     wins = 0;
     bankTotal = 50;
@@ -120,15 +125,13 @@ function showMeMyWins(){
 }
 
 function playSpinAudio() {
-    console.log('this play when i spin');
-
+    return spinAudio.play();
 }
 
 function playWinAudio() {
     console.log('this play when i win something');
-
     if (wins > 0) {
-        
+        return winAudio.play();
     }
 }
 

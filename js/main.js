@@ -1,4 +1,4 @@
-// author @brownbugz - Sonnia Kemmer 2019 (C)
+// author @br0wnbugz - Sonnia Kemmer 2019 (C)
 
 // const variables
 const spinCost = 5;

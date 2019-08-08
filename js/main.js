@@ -129,7 +129,6 @@ function playSpinAudio() {
 }
 
 function playWinAudio() {
-    console.log('this play when i win something');
-    if (wins > 0) return winAudio.play();
+    if (pays > 0) return winAudio.play();
 }
 

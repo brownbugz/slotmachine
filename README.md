@@ -11,9 +11,11 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Slot_machine), the **Slot
 ## Screenshots
 
 
-The start image screen. Originally, I thought of doing a 3x3 grid but decided to make it simple for now. 
-\
-![Slot Machine Starting Screen](https://github.com/brownbugz/slotmachine/blob/master/images/slot1.png)
+The start image screen. 
+
+\Originally, I thought of doing a 3x3 grid but decided to make it simple for now. 
+
+\ ![Slot Machine Starting Screen](https://github.com/brownbugz/slotmachine/blob/master/images/slot1.png)
 
 
 When a User click the Spin button, the reel images changes randomly. In the beginning, I only have a triple-image payout, 

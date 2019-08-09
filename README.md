@@ -1,5 +1,7 @@
 # Slot Machine
 
+---
+
 ## Description
 
 According to [Wikipedia](https://en.wikipedia.org/wiki/Slot_machine), the **Slot Machine** (American English), 
@@ -7,6 +9,7 @@ known variously as **fruit machine** (British English, except Scotland), **puggy
 (Canadian and American English), **poker machine/pokies** (Australian English, or simply **slot** (British English 
 and American English) is a casino gambling machine that creates a game of chance for its customers.
 
+---
 
 ## Screenshots
 
@@ -29,6 +32,7 @@ So, I added a two-of-a-kind payout to make it fun.
 
 ![Triple Image Win](https://github.com/brownbugz/slotmachine/blob/master/images/slot3.png)
 
+---
 
 ## Technologies Used
 
@@ -36,21 +40,24 @@ So, I added a two-of-a-kind payout to make it fun.
 * CSS
 * JavaScript
 
+---
 
 ## Getting Started
 
 [Slot Machine Game](https://brownbugz.github.io/slotmachine/)
 
-1. 50 credits appear on the credit box to start playing. 
-2. Click the blinking spin button to start the game.
-3. Be sure to have your sound on (if it is okay with your surroundings).
-4. Your starting credits will be deducted by 5 every time you click the spin button.
-5. Randomly, the images will change every time you click the spin button.
-6. Payouts are given to two-of-a-kind and three-of-a-kind. 
-7. If you have ended up with zero credits, the game will reset.
+* 50 credits appear on the credit box to start playing. 
+* Click the blinking spin button to start the game.
+* Be sure to have your sound on (if it is okay with your surroundings).
+* Your starting credits will be deducted by 5 every time you click the spin button.
+* Randomly, the images will change every time you click the spin button.
+* Payouts are given to two-of-a-kind and three-of-a-kind. 
+* If you have ended up with zero credits, the game will reset.
 
 > **DISCLAIMER: I didn't put a dollar sign on the credits and winnings to remind you that this is just a school project.
 I won't be owing anyone money. HaHa!**
+
+---
 
 ## Next Steps
 
@@ -61,6 +68,7 @@ Planned future enhancements:
 * Improve the look to resemble an actual casino slot machine
 * Create a pull down lever instead of a spin button
 
+---
 
 
 

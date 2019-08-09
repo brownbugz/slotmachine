@@ -18,7 +18,7 @@ The start image screen.
 
 Originally, I thought of doing a 3x3 grid but decided to make it simple for now. 
 
-![Slot Machine Starting Screen](https://github.com/brownbugz/slotmachine/blob/master/images/slot1.png)
+<img src="https://github.com/brownbugz/slotmachine/blob/master/images/slot1.png" width="600">
 
 
 When a User click the Spin button, the reel images changes randomly. 
@@ -27,10 +27,10 @@ In the beginning, I only have a three-of-a-kind payout, but winning something be
 
 So, I added a two-of-a-kind payout to make it fun.
 
-![Double Image Win](https://github.com/brownbugz/slotmachine/blob/master/images/slot2.png)
+<img align="center" src="https://github.com/brownbugz/slotmachine/blob/master/images/slot2.png" width="600">
 
 
-![Triple Image Win](https://github.com/brownbugz/slotmachine/blob/master/images/slot3.png)
+<img align="center" src="https://github.com/brownbugz/slotmachine/blob/master/images/slot3.png" width="600">
 
 ---
 

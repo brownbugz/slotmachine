@@ -49,7 +49,7 @@ So, I added a two-of-a-kind payout to make it fun.
 6. Payouts are given to two-of-a-kind and three-of-a-kind. 
 7. If you have ended up with zero credits, the game will reset.
 
-**DISCLAIMER: I didn't put a dollar sign on the credits and winnings to remind you that this is just a school project.
+> **DISCLAIMER: I didn't put a dollar sign on the credits and winnings to remind you that this is just a school project.
 I won't be owing anyone money. HaHa!**
 
 ## Next Steps
